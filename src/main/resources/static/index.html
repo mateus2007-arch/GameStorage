@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - GameStorage</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/tema.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>GameStorage</h1>
+        <nav>
+            <a href="index.html" class="ativo">Início</a>
+              <a href="config.html">Configurações</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="filtros" aria-label="Filtros de busca">
+            <input type="search" id="busca" placeholder="Pesquise o produto...">
+            
+            <select id="filtro-hardware">
+                <option value="">Selecione um Hardware</option>
+            </select>
+            
+              <select id="filtro-periferico">
+                <option value="">Selecione um Periférico</option>
+              </select>
+        </section>
+
+
+        <div class="tabela-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Estoque</th>
+                    </tr>
+                </thead>
+              <tbody id="corpo-tabela"></tbody>
+            </table>
+        </div>
+
+        <div class="botoes">
+            <a href="cadastro-produto.html" class="botao">Cadastrar Produto</a>
+              <button id="btn-editar">Editar Produto</button>
+            <button id="btn-excluir">Excluir</button>
+        </div>
+
+
+        <div id="mensagem" class="mensagem" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <p>GameStorage &copy; Projeto Integrador</p>
+    </footer>
+
+    <script src="js/dados.js" defer></script>
+    <script src="js/validacao.js" defer></script>
+    <script src="js/principal.js" defer></script>
+
+</body>
+</html>

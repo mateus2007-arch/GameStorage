@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produto - GameStorage</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/tema.js"></script>
+</head>
+<body>
+    <header>
+        <h1>GameStorage</h1>
+        <nav>
+            <a href="index.html" class="ativo">Início</a>
+              <a href="config.html">Configurações</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2 style="margin-bottom: 25px;">Editar Produto</h2>
+        
+        <form id="form-produto" class="formulario" data-modo="editar" novalidate>
+            <label for="nome">Nome do Produto:</label>
+              <input type="text" id="nome" placeholder="Ex: Teclado Mecânico">
+            <span class="erro" id="erro-nome"></span>
+<br>
+
+            <label for="categoria">Tipo / Categoria:</label>
+            <input type="text" id="categoria" list="lista-tipos">
+            <datalist id="lista-tipos"></datalist>
+            <span class="erro" id="erro-categoria"></span>
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" autocomplete="off">
+            <span class="erro" id="erro-marca"></span>
+
+
+            <div class="linha" style="display: flex; gap: 10px;">
+                <div>
+                    <label for="preco">Preço (R$):</label>
+                      <input type="text" id="preco" required>
+                    <span class="erro" id="erro-preco"></span>
+                </div>
+              <div>
+                    <label for="estoque">Quantidade em Estoque:</label>
+                    <input type="text" id="estoque">
+                    <span class="erro" id="erro-estoque"></span>
+              </div>
+            </div>
+
+
+            <div class="botoes" style="margin-top: 15px;">
+                <button type="submit" id="btn-salvar">Atualizar Dados</button>
+                <a class="botao" href="index.html">Cancelar</a>
+            </div>
+            
+            <div id="mensagem" class="mensagem"></div>
+        </form>
+    </main>
+
+
+    <footer>GameStorage - Projeto Integrador &copy; 2026</footer>
+
+    <script src="js/dados.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="js/produto.js"></script>
+</body>
+</html>

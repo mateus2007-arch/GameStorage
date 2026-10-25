@@ -1,0 +1,152 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ececec;
+    color: #111;
+}
+
+header {
+    background: #cccccc;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+header h1 { margin: 0; font-size: 24px; font-weight: normal; }
+
+nav a {
+    color: #111;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+nav a:hover { background: #bbbbbb; }
+nav a.ativo { background: #888888; }
+
+
+main { 
+    max-width: 960px; 
+    margin: 24px auto; 
+    padding: 0 16px; 
+}
+
+h2 { margin: 0 0 14px 0; font-size: 20px; font-weight: normal; }
+h2.centro { text-align: center; }
+
+.filtros { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.filtros input { flex: 1; min-width: 200px; }
+
+
+input, select, button {
+    border: 1px solid #999;
+    padding: 8px 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    background: #fdfafa;
+}
+
+.botao, button {
+    background: #777777;
+    color: #fff;
+    border: 1px solid #666;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 18px;
+    text-align: center;
+}
+
+.botao:hover, button:hover { background: #5e5e5e; }
+
+
+.botoes { 
+    display: flex; 
+    gap: 12px; 
+    flex-wrap: wrap; 
+    margin-top: 16px; 
+}
+
+.tabela-scroll { overflow-x: auto; background: #d9d9d9; border: 1px solid #999; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #bbb; }
+th { background: #cccccc; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: #e6e6e6; }
+tbody tr.selecionada { background: #b9d6f2; }
+
+
+.formulario { max-width: 440px; margin: 0 auto; }
+.formulario label { 
+    display: block; 
+    margin-top: 10px; 
+    margin-bottom: 3px; 
+    font-size: 13px; 
+}
+.formulario input, .formulario select { width: 100%; }
+.formulario .botoes { justify-content: space-between; margin-top: 28px; }
+.formulario .botoes .botao, .formulario .botoes button { width: 48%; }
+
+
+.linha { display: flex; gap: 20px; }
+.linha div { flex: 1; }
+
+.erro { display: block; color: #b03a2e; font-size: 12px; min-height: 15px; }
+
+
+.mensagem { 
+    margin-top: 14px; 
+    padding: 10px; 
+    border-radius: 2px; 
+    display: none; 
+}
+.mensagem.ok { display: block; background: #d4edda; }
+.mensagem.falha { display: block; background: #f8d7da; }
+
+footer { text-align: center; color: #777; padding: 24px; font-size: 14px; }
+
+
+.centralizado { text-align: center; margin-top: 50px; }
+
+.botao-tema {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 160px;
+    padding: 12px 16px;
+    font-size: 17px;
+}
+
+.quadrado {
+    width: 22px;
+    height: 22px;
+    background: #ffffff;
+      border: 1px solid #444;
+}
+
+
+html.escuro body { background: #262626; color: #eeeeee; }
+html.escuro header { background: #6e6e6e; }
+html.escuro nav a { color: #ffffff; }
+html.escuro nav a:hover { background: #5c5c5c; }
+html.escuro nav a.ativo { background: #909090; }
+html.escuro input, html.escuro select { background: #333333; color: #eeeeee; border-color: #666666; }
+html.escuro .tabela-scroll { background: #333333; border-color: #555555; }
+html.escuro th { background: #4a4a4a; }
+html.escuro th, html.escuro td { border-bottom-color: #555555; }
+html.escuro tbody tr:hover { background: #3d3d3d; }
+html.escuro tbody tr.selecionada { background: #35506b; }
+html.escuro .erro { color: #ff8a80; }
+html.escuro .mensagem.ok { background: #1e4d2b; }
+html.escuro .mensagem.falha { background: #5a2323; }
+html.escuro footer { color: #999999; }
+  html.escuro .quadrado { background: #000000; border-color: #cccccc; }
+

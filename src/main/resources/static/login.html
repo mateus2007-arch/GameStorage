@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GameStorage</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/tema.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>GameStorage</h1>
+        <nav>
+            <a href="index.html">Início</a>
+              <a href="config.html">Configurações</a>
+            <a href="login.html" class="ativo">Login</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2 class="centro">Login</h2>
+        
+        <form id="form-login" class="formulario" novalidate>
+            
+            <label for="nome">Nome / Usuário:</label>
+              <input type="text" id="nome" autocomplete="off" required>
+            <span class="erro" id="erro-nome"></span>
+            <br>
+
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="••••••••" required>
+            <span class="erro" id="erro-senha"></span>
+
+            <div class="botoes" style="margin-top: 20px;">
+                <button type="submit" id="btn-entrar">Logar</button>
+                  <a class="botao" href="index.html">Voltar para o Início</a>
+            </div>
+
+
+            <div id="mensagem" class="mensagem"></div>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>GameStorage - Projeto Integrador &copy; 2026</p>
+    </footer>
+
+    <!-- Scripts no final por que o de validação tava dando erro no head -->
+   
+    <script src="js/validacao.js"></script>
+</body>
+</html>
