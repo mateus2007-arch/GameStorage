@@ -1,7 +1,7 @@
 # GameStorage
 
 Sistema web de controle de estoque de produto.
-**Aluno: Mateus Nascimento Ferreira de Souza
+**Nome: Mateus Nascimento Ferreira de Souza
 
 ## Funcionalidades
 - Cadastrar, editar e excluir produtos
